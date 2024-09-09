@@ -1,1 +1,26 @@
-r
+import capos.*
+describe "rolando"{
+        test "encontrar cosas"{
+        // 1. rolando encuentra la espada del destino (la agarra)
+        rolando.encontrar(espada)
+        rolando.encontrar(collar)
+        rolando.encontrar(libro)
+        //assert.equals(2,rolando.mochila().size())  // le pregunto el tamaño de la mochila con la funcion nativa size
+        //assert.equals([espada,collar], rolando.mochila()) //lista 
+        assert.equals(#{espada,collar}, rolando.mochila()) //conjunto
+        }
+    test "ir al hogar"{
+        rolando.encontrar(espada)
+        rolando.encontrar(libro)
+        rolando.llegar()
+        assert.equals(#{},rolando.mochila())
+
+        rolando.encontrar(collar)
+        rolando.encontrar(armadura)
+        assert.equals(#{collar,armadura},rolando.mochila())
+        assert.equals(#{espada,libro},castillo.cofre())
+
+    }
+}
+
+ 

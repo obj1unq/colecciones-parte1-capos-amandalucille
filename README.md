@@ -70,17 +70,3 @@ Si consultamos la historia de encuentro con los artefactos debería ser:
  3. collar divino
  4. armadura de acero valyrio
  5. collar divino (de nuevo!)
- 
- 
-
-
-  
- 
-
-
-
-
-
-
- 
-
